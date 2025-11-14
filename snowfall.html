@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zack Wilkins - Snowfall</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="snowfall-bg"> <!-- NEW: snowfall-specific background class -->
+    <nav class="navbar">
+        <div class="nav-brand">Zack Wilkins</div>
+        <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-menu">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="snowfall.html" class="active">Snowfall Tracker</a></li>
+            <li><a href="ultras.html">Ultra Runs</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- NEW: Opaque card like other pages -->
+        <div class="snowfall-card">
+            <h1>Snowfall Tracker – American West</h1>
+
+            <div class="controls">
+                <label for="location">Select Region:</label>
+                <select id="location">
+                    <option value="">-- Choose a Region --</option>
+                    <option value="slc">Salt Lake City, UT</option>
+                    <option value="seattle">Seattle, WA</option>
+                    <option value="reno">Reno-Tahoe, NV</option>
+                    <option value="denver">Denver, CO</option>
+                </select>
+                <button id="fetch-btn">Load Data</button>
+            </div>
+            <div id="snowfall-results" class="results-grid">
+                <!-- Cards will be injected here by JS -->
+                <p class="placeholder">Select a region and click “Load Data” to see snowfall stats.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Zack Wilkins. All rights reserved.</p>  
+        <p> Data provided by SNOTEL stations</p>      
+        <a href="https://www.flaticon.com/free-icons/snow" title="snow icons">Snow icons created by Freepik - Flaticon</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

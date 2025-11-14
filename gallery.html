@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zack Wilkins - Gallery</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="about-bg">
+    <nav class="navbar">
+        <div class="nav-brand">Zack Wilkins</div>
+        <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-menu">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="snowfall.html">Snowfall Tracker</a></li>
+            <li><a href="ultras.html">Ultra Runs</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="gallery">
+            <h1>Photo Gallery</h1>
+
+            <!-- NEW: Opaque card like About Me -->
+            <div class="gallery-card">
+                    <div class="gallery-grid">
+                        <!-- Each image in a wrapper for caption overlay -->
+                        <div class="gallery-item">
+                            <a href="images/gallery/alta-summer-wildflowes.jpg" data-lightbox>
+                                <img src="images/gallery/alta-summer-wildflowes.jpg" alt="Summer Wildflowers in Albion Basin at Alta" loading="lazy">
+                                <div class="caption-overlay">Summer Wildflowers in Albion Basin at Alta</div>
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="images/gallery/corona-arch.jpg" data-lightbox>
+                                <img src="images/gallery/corona-arch.jpg" alt="Corona Arch Near Moab" loading="lazy">
+                                <div class="caption-overlay">Corona Arch Near Moab</div>
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="images/gallery/desolation-lake.jpg" data-lightbox>
+                                <img src="images/gallery/desolation-lake.jpg" alt="Desolation Lake" loading="lazy">
+                                <div class="caption-overlay">Desolation Lake</div>
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="images/gallery/mt-raymond-fall.jpg" data-lightbox>
+                                <img src="images/gallery/mt-raymond-fall.jpg" alt="Mt. Raymond with Fall Colors" loading="lazy">
+                                <div class="caption-overlay">Mt. Raymond with Fall Colors</div>
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="images/gallery/mt-wire-sunset.jpg" data-lightbox>
+                                <img src="images/gallery/mt-wire-sunset.jpg" alt="Sunset from Mt. Wire" loading="lazy">
+                                <div class="caption-overlay">Sunset from Mt. Wire</div>
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="images/gallery/salt-lake-from-grandeur.jpg" data-lightbox>
+                                <img src="images/gallery/salt-lake-from-grandeur.jpg" alt="Salt Lake City from Grandeur Peak" loading="lazy">
+                                <div class="caption-overlay">Salt Lake City from Grandeur Peak</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Lightbox Overlay (hidden by default) -->
+                    <div id="lightbox" class="lightbox">
+                        <span class="lightbox-close">&times;</span>
+                        <img class="lightbox-content" id="lightbox-img">
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Zack Wilkins. All rights reserved.</p>
+        <a href="https://www.flaticon.com/free-icons/snow" title="snow icons">Snow icons created by Freepik - Flaticon</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
