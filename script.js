@@ -118,7 +118,7 @@ async function fetchSnowData(metadataURL) {
 
       const url = `https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?` +
                   `stationTriplets=${encodeURIComponent(triplet)}` +
-                  `&elements=SNWD&duration=HOURLY&beginDate=-24&endDate=0` +
+                  `&elements=SNWD&duration=HOURLY&beginDate=-48&endDate=0` +
                   `&periodRef=END&centralTendencyType=NONE` +
                   `&returnFlags=false&returnOriginalValues=false&returnSuspectData=false`;
 
