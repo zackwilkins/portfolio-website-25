@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const urls = {
             slc: {url: "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/stations?stationTriplets=%2A%3AUT%3ASNTL&countyNames=Salt%20Lake%2C%20Davis%2C%20Weber%2C%20Utah&elements=SNWD&durations=HOURLY&returnForecastPointMetadata=false&returnReservoirMetadata=false&returnStationElements=false&activeOnly=true"},
-            seattle: {url: "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/stations?stationTriplets=%2A%3AWA%3ASNTL&countyNames=King%2C%20Snohomish%2C%20Kittitas&elements=SNWD&durations=HOURLY&returnForecastPointMetadata=false&returnReservoirMetadata=false&returnStationElements=false&activeOnly=true"},
+            seattle: {url: "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/stations?stationTriplets=%2A%3AWA%3ASNTL&stationNames=Stevens%20Pass%2C%20Olallie%20Meadows%2C%20Buckinghorse%2C%20Corral%20Pass%2C%20Paradise%2C%20White%20Pass%2A%2C%20Wells%20Creek%2C%20Rainy%20Pass&returnForecastPointMetadata=false&returnReservoirMetadata=false&returnStationElements=false&activeOnly=true"},
             reno: {url: "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/stations?stationTriplets=%2A%3ANV%3ASNTL%2C%20%2A%3ACA%3ASNTL&countyNames=Nevada%2C%20Placer%2C%20El%20Dorado%2C%20Alpine%2C%20Washoe&elements=SNWD&durations=HOURLY&returnForecastPointMetadata=false&returnReservoirMetadata=false&returnStationElements=false&activeOnly=true"},
             denver: {url: "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/stations?stationTriplets=%2A%3ACO%3ASNTL&countyNames=Jefferson%2C%20Clear%20Creek%2C%20Park%2C%20Summit%2C%20Eagle&elements=SNWD&durations=HOURLY&returnForecastPointMetadata=false&returnReservoirMetadata=false&returnStationElements=false&activeOnly=true"}
         };
@@ -261,4 +261,5 @@ class Station{
         return snowfall;
     }
 }
+
 
